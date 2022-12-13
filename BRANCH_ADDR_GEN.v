@@ -25,6 +25,6 @@ module BRANCH_ADDR_GEN(J_type, B_type, I_type, rs1, PC, jal, branch, jalr);
 
     assign jal = (PC + J_type);
     assign jalr = (rs1 + I_type);
-    assign  branch = (PC + B_type);
+    assign branch = (PC + B_type);
 
 endmodule
